@@ -1,0 +1,195 @@
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(#22200e2c), url(./../../../../assets/hero4.png);
+  /* نصف شفافية سوداء */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0.809);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  align-items: center;
+  text-align: center;
+  /* padding-top: 370px; */
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #f7e684;
+  text-shadow: 0px 5px 20px rgb(0, 0, 0);
+  font-size: 3.8rem;
+}
+
+h3 {
+  color: #fff6c5;
+  text-shadow: 10px 5px 10px rgb(0, 0, 0);
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 0px auto;
+}
+
+
+
+.demo-btn {
+  margin: 20px 0px;
+  background: #f7e68479;
+  box-shadow: 0px 5px 20px rgb(0, 0, 0);
+  border: none;
+  padding: 14px 35px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.7),
+      transparent);
+  transform: skewX(-25deg);
+  transition: 0.7s;
+}
+
+.demo-btn:hover::before {
+  left: 130%;
+}
+
+.demo-btn:hover {
+  background: #f7e68459;
+  transform: scale(1.05);
+}
+
+
+
+
+.feature-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.scroll {
+  margin-top: 40px;
+  animation: scrollMove 2s infinite;
+  text-shadow: 4px 5px 6px rgb(0, 0, 0);
+
+}
+
+.col-md-3 {
+  transition: 0.5s all;
+  box-shadow: 0px 5px 200px rgba(213, 213, 213, 0.049);
+
+}
+
+
+.col-md-3:hover {
+  transform: translateY(-10px);
+
+}
+
+@keyframes scrollMove {
+  0% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(10px)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.fetures {
+  margin-top: 82px;
+}
+
+
+
+
+h5 {
+  text-shadow: 4px 5px 6px rgb(0, 0, 0);
+  font-size: 25px;
+}
+
+p {
+  color: #e2d58f;
+
+  text-shadow: 4px 5px 6px rgb(0, 0, 0);
+
+}
+
+div span {
+  font-size: 25px;
+}
+
+
+
+
+/* -----------------respo----------------------- */
+/* 📱 موبايل */
+@media (max-width: 768px) {
+
+  h1 {
+    margin-top: 400px;
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  .demo-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding-bottom: 30px;
+  }
+}
+
+/* 📲 تابلت */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+
+  .demo-btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .fetures {
+    margin-top: 60px;
+  }
+}
+
+/* 💻 شاشات صغيرة لابتوب */
+@media (min-width: 1025px) and (max-width: 1400px) {
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    width: 60%;
+  }
+}
