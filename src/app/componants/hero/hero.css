@@ -1,11 +1,14 @@
 .hero {
+
   min-height: 100vh;
-  background-image: linear-gradient(#22200e2c), url(./../../../../assets/hero4.png);
-  /* نصف شفافية سوداء */
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0) 70%, #1a0f05 100%),
+    url('../../../../assets/hero4.png');  /* نصف شفافية سوداء */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: rgba(255, 255, 255, 0.809);
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
